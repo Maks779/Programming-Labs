@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mathematica", "Mathematica\Mathematica.csproj", "{672D4B64-2313-48DE-BD1C-F38C27D2751E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{672D4B64-2313-48DE-BD1C-F38C27D2751E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{672D4B64-2313-48DE-BD1C-F38C27D2751E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{672D4B64-2313-48DE-BD1C-F38C27D2751E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{672D4B64-2313-48DE-BD1C-F38C27D2751E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7CE60A9-D485-44D4-B031-4CD87D3805FD}
+	EndGlobalSection
+EndGlobal
