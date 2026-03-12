@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Psotify.Console/Psotify.Console.csproj" />
+  <Project Path="Psotify.DataModel/Psotify.DataModel.csproj" />
+</Solution>
