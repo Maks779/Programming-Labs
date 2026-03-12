@@ -32,7 +32,6 @@ using (var db = new PsotifyDbContext())
 
     db.Artists.Add(nirvana);
     db.Songs.Add(teenSpirit);
-    db.SaveChanges(); // One single SaveChanges call
     Console.WriteLine("Nirvana and song added.\n");
 
     Console.WriteLine("--- Task 3 ---");
@@ -55,7 +54,7 @@ using (var db = new PsotifyDbContext())
 
     Console.WriteLine("--- Task 2 ---");
     var allSongs = db.Songs.Include(s => s.Artist).ToList();
-    
+
     foreach (var song in allSongs)
     {
         Console.WriteLine($"\"{song.Title}\" by {song.Artist.Name} ({song.Length})");
