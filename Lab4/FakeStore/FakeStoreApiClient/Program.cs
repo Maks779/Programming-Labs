@@ -4,11 +4,9 @@ using FakeStoreApiClient;
 var httpClient = new HttpClient();
 httpClient.BaseAddress = new Uri("https://fakestoreapi.com/");
 
-// GET продукт
 var product = await httpClient.GetFromJsonAsync<Product>("products/1");
 Console.WriteLine($"Before update: {product.Title}, Price: {product.Price}");
 
-// Змінити ціну і відправити PUT
 product.Price = 1000;
 var response = await httpClient.PutAsJsonAsync("products/1", product);
 var updated = await response.Content.ReadFromJsonAsync<Product>();
