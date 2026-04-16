@@ -39,16 +39,14 @@ public class Car
     public void Drive(double distance)
     {
         var fuelNeeded = distance / 100.0 * FuelConsumption;
+        var maxDistance = _fuelLevel / FuelConsumption * 100.0;
 
         if (fuelNeeded > _fuelLevel)
         {
-            _odometer += _fuelLevel / FuelConsumption * 100.0;
-            _fuelLevel = 0;
+            throw new InsufficientFuelException(distance, _fuelLevel, maxDistance);
         }
-        else
-        {
-            _fuelLevel -= fuelNeeded;
-            _odometer += distance;
-        }
+
+        _fuelLevel -= fuelNeeded;
+        _odometer += distance;
     }
 }
